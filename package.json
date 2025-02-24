@@ -1,6 +1,6 @@
 {
   "name": "react-example-lib",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -13,21 +13,30 @@
     "url": "https://github.com/griseduardo/react-example-lib.git"
   },
   "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs"
+    "build": "rollup -c --bundleConfigAsCjs",
+    "lint-src": "eslint src",
+    "lint-src-fix": "eslint src --fix",
+    "format-src": "prettier src --check",
+    "format-src-fix": "prettier src --write"
   },
   "devDependencies": {
+    "@eslint/js": "^9.19.0",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "11.1.6",
     "@types/react": "^19.0.8",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react": "^7.37.4",
+    "prettier": "^3.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rollup": "^4.30.1",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "styled-components": "^6.1.14",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0"
   },
   "peerDependencies": {
     "react": "^19.0.0",
