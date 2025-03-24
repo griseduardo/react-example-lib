@@ -1,3 +1,10 @@
+## 0.3.0
+
+_Mar. 24, 2025_
+
+- setup jest and testing-library
+- add components tests
+
 ## 0.2.0
 
 _Fev. 24, 2025_
