@@ -1,3 +1,10 @@
+## 0.4.0
+
+_Abr. 29, 2025_
+
+- setup husky and lint-staged
+- define pre-commit actions
+
 ## 0.3.0
 
 _Mar. 24, 2025_
