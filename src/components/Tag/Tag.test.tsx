@@ -13,8 +13,8 @@ describe("<Tag />", () => {
 
     expect(element).toBeInTheDocument();
     expect(element).toHaveStyleRule("background-color", "#d3d3d3");
-    expect(element).toHaveStyleRule("border-radius", "0");
-    expect(element).toHaveStyleRule("padding", "7px");
+    expect(element).toHaveStyleRule("border-radius", "5px");
+    expect(element).toHaveStyleRule("padding", "10px 12px");
     expect(within(element).getByText("Tag")).toHaveStyleRule("color", "#fff");
   });
 
@@ -96,17 +96,6 @@ describe("<Tag />", () => {
     const element = screen.getByTestId("tag");
 
     expect(within(element).getByText("Tag")).toHaveStyleRule("color", "#000");
-  });
-
-  it("should render component with bold text font weight", () => {
-    render(<Tag text="Tag" textWeight="bold" />);
-
-    const element = screen.getByTestId("tag");
-
-    expect(within(element).getByText("Tag")).toHaveStyleRule(
-      "font-weight",
-      "bold",
-    );
   });
 
   it("should render component with custom text font weight", () => {

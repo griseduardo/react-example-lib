@@ -1,0 +1,46 @@
+import { Canvas, Controls, Meta } from "@storybook/blocks";
+import * as Stories from "./Text.stories";
+
+<Meta of={Stories} />
+
+# Text
+
+Text base component.
+
+<Canvas of={Stories.Default} withToolbar />
+
+<Controls of={Stories.Default} />
+
+## Predefined properties
+
+### Font Weight
+
+There are two font weight predefined properties: normal(default) and bold.
+
+<Canvas of={Stories.PredefinedFontWeight} withToolbar />
+
+## Custom properties
+
+### Color
+
+Text color can be modified.
+
+<Canvas of={Stories.Color} withToolbar />
+
+### Font Weight
+
+Text font weight can be modified.
+
+<Canvas of={Stories.CustomFontWeight} withToolbar />
+
+### Font Size
+
+Text font size can be modified.
+
+<Canvas of={Stories.FontSize} withToolbar />
+
+### Font Family
+
+Text font family can be modified.
+
+<Canvas of={Stories.FontFamily} withToolbar />

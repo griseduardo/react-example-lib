@@ -12,6 +12,10 @@ yarn add react-example-lib
 npm install react-example-lib
 ```
 
+## Storybook
+
+The lib components are presented in [storybook](https://6835d845b846c23caad4056b-mscmynsimj.chromatic.com/).
+
 ## Import components
 
 Example component:

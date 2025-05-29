@@ -1,3 +1,11 @@
+## 0.5.0
+
+_May. 29, 2025_
+
+- change Tag and Text default behavior
+- add storybook
+- add Tag and Text storybook docs
+
 ## 0.4.0
 
 _Abr. 29, 2025_

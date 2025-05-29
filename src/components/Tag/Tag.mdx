@@ -1,0 +1,82 @@
+import { Canvas, Controls, Meta } from "@storybook/blocks";
+import * as Stories from "./Tag.stories";
+
+<Meta of={Stories} />
+
+# Tag
+
+Tag base component.
+
+<Canvas of={Stories.Default} withToolbar />
+
+<Controls of={Stories.Default} />
+
+## Predefined properties
+
+### Type
+
+There are four type predefined properties: default, success, alert and error.
+
+<Canvas of={Stories.PredefinedType} withToolbar />
+
+### Format
+
+There are three format predefined properties: square, semiRounded (default) and rounded.
+
+<Canvas of={Stories.PredefinedFormat} withToolbar />
+
+### Size
+
+There are three size predefined properties: small, medium (default) and large.
+
+<Canvas of={Stories.PredefinedSize} withToolbar />
+
+## Custom properties
+
+### Text
+
+Tag text can be modified.
+
+<Canvas of={Stories.Text} withToolbar />
+
+### Background Color
+
+Tag background color can be modified.
+
+<Canvas of={Stories.BackgroundColor} withToolbar />
+
+### Format
+
+Tag format can be modified by border radius definition.
+
+<Canvas of={Stories.CustomFormat} withToolbar />
+
+### Size
+
+Tag size can be modified by padding definition.
+
+<Canvas of={Stories.CustomSize} withToolbar />
+
+### Text Color
+
+Tag text color can be modified.
+
+<Canvas of={Stories.TextColor} withToolbar />
+
+### Text Font Weight
+
+Tag text font weight can be modified.
+
+<Canvas of={Stories.TextFontWeight} withToolbar />
+
+### Text Font Family
+
+Tag text font family can be modified.
+
+<Canvas of={Stories.TextFontFamily} withToolbar />
+
+### Text Font Size
+
+Tag text font size can be modified.
+
+<Canvas of={Stories.TextFontSize} withToolbar />

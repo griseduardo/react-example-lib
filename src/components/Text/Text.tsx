@@ -19,23 +19,23 @@ export interface StyledTextProps {
 }
 
 export const StyledText = styled.span<StyledTextProps>`
-  color: ${(props) => (props.$color ? props.$color : "#000")};
-  font-size: ${(props) => (props.$fontSize ? props.$fontSize : "16px")};
+  ${(props) => props.$color && `color: ${props.$color};`}
+  ${(props) => props.$fontSize && `font-size: ${props.$fontSize};`}
   font-weight: ${(props) =>
     props.$fontWeight
       ? props.$fontWeight
       : props.$weight
         ? props.$weight
         : "normal"};
-  font-family: ${(props) => (props.$fontFamily ? props.$fontFamily : "Arial")};
+  ${(props) => props.$fontFamily && `font-family: ${props.$fontFamily};`}
 `;
 
 const Text = ({
   children,
-  color,
-  weight,
+  color = "#000",
+  weight = "normal",
   fontWeight,
-  fontSize,
+  fontSize = "16px",
   fontFamily,
 }: TextProps) => (
   <StyledText
