@@ -1,3 +1,10 @@
+## 0.6.0
+
+_Jun. 30, 2025_
+
+- add hygen
+- add component generator
+
 ## 0.5.0
 
 _May. 29, 2025_
